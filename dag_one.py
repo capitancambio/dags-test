@@ -28,7 +28,7 @@ default_args = {
 
 
 dag = DAG(
-    "celery_remote", default_args=default_args, schedule_interval=None)
+    "a_test", default_args=default_args, schedule_interval=None)
 
 one = PythonOperator(task_id="one_task",
                      python_callable=print,
